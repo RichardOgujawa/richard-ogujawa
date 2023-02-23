@@ -1,3 +1,276 @@
+@import url("https://use.typekit.net/jtf5ifb.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        /*Colours*/
+        /*--Neutral*/
+        --col-neutral-100: 0deg 0% 79%;
+        --col-neutral-250: 0deg 0% 64%;
+        --col-neutral-500: 0deg 0% 44%;
+        --col-neutral-900: 18deg 100% 2%;
+
+        /*--Primary*/
+        --col-primary-100: 360deg 5% 56%;
+
+        --marquee-elements: 15;
+        --marquee-element-width: 50px;
+        /* --marquee-box-width: ; */
+
+        @apply text-[11.5pt] tablet:text-[13pt]
+    }
+
+    body {
+        font-family: "din-condensed", sans-serif;
+        font-weight: light;
+    }
+
+    input,
+    textarea {
+        @apply text-col-neutral-100 py-1 px-2 border border-col-neutral-250 bg-transparent placeholder:text-col-neutral-500 resize-none
+    }
+
+    input:focus {
+        @apply outline-white
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+@layer utilities {
+
+    /*GLOBAL*/
+    /*_Padding_*/
+    .bottom-padding {
+        @apply pb-6
+    }
+
+    /*_Links_*/
+    .link {
+        @apply text-white
+    }
+
+    .list-active {
+        @apply text-white
+    }
+
+    /*FONT*/
+    .din-regular {
+        font-family: 'din-condensed', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .din-light {
+        font-family: 'din-condensed', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .whitespace {
+        word-wrap: break-word;
+    }
+
+    /*_MOBILE MENU_*/
+    .mobile-menu {
+        @apply border-l border-col-neutral-250 fixed text-col-neutral-100 transition top-0 right-0 h-[100vh] w-[60%] grid bg-col-neutral-900/[85%] 
+    }
+
+    .social-media-icon {
+        @apply h-full grid items-center
+    }
+
+
+    .complex-grid {
+        --main-content: 20fr;
+        grid-template-columns: 1fr var(--main-content) 1fr;
+        grid-template-rows: 8fr var(--main-content) 1fr;
+        grid-template-areas:
+            ". heading ."
+            ". list ."
+            ". footer .";
+        height: 100vh;
+    }
+
+    .complex-grid-item {
+        @apply border border-col-neutral-250;
+    }
+
+    .complex-grid-heading {
+        grid-area: heading;
+    }
+
+    .complex-grid-list {
+        grid-area: list;
+    }
+
+    .complex-grid-footer {
+        grid-area: footer;
+    }
+
+
+    /*Content beside SideBar CV*/
+    .content {
+        @apply w-full md:w-[60%] xl:w-3/4
+    }
+
+    .inner-container {
+        @apply w-full max-w-3xl
+    }
+
+
+    /*Navigation*/
+    /*--Menu Items without Underline*/
+    .menuItems>li,
+    .menuItemsWUnderline>li,
+    .menuItemsWUnderlineLeft>li {
+        position: relative;
+        @apply cursor-pointer h-full grid items-center w-full text-col-neutral-500 hover:text-col-neutral-100 transition duration-300;
+    }
+
+    .menuItemsWUnderlineLeft>li {
+        @apply px-[2rem]
+    }
+
+    /*--Menu Items with Underline*/
+    .menuItemsWUnderline>li::after,
+    .menuItemsWUnderlineLeft>li::after {
+        content: "";
+        width: calc(100% + 10px);
+        height: 5px;
+
+        position: absolute;
+        top: calc(100% - 4px);
+        left: 0%;
+
+        background-color: hsl(var(--col-neutral-100));
+
+        opacity: 0;
+    }
+
+    .menuItemsWUnderlineLeft>li::after {
+        height: calc(100% + 10px);
+        width: 5px;
+
+        top: 50%;
+        left: 0%;
+
+        transform: translateY(-50%);
+
+        background-color: hsl(var(--col-neutral-100));
+    }
+
+    .menuItemsWUnderline>li:nth-child(1):after {
+        left: 0;
+        transform: translateX(0%);
+    }
+
+    .menuItemsWUnderline>li::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menuItemsWUnderline>li:last-child::after {
+        left: 0%;
+        transform: translateX(-10px);
+    }
+
+    .menuItemsWUnderlineLeft>li:last-child::after,
+    .menuItemsWUnderline>li:last-child:after {
+        left: 0;
+        right: 50%;
+    }
+
+    .menuItemsWUnderlineLeft>li:hover::after,
+    .menuItemsWUnderline>li:hover:after {
+        opacity: 0.5
+    }
+
+    /*PORTFOLIO PAGE*/
+    /*--Portfolio Buttons--*/
+    .carousel-item > div:nth-child(2){
+        @apply translate-y-full transition duration-300
+    }
+    .carousel-item:hover > div:nth-child(2) {
+        @apply translate-y-0
+    }
+    .portfolio-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        @apply w-full h-full gap-x-4 gap-y-2 p-4
+    }
+
+    .portfolio-buttons>button {
+        @apply flex flex-col p-4 border border-col-neutral-250 transition duration-500 text-col-neutral-250/80 text-sm hover:bg-col-neutral-100 hover:border-col-neutral-100 hover:text-col-neutral-900
+    }
+
+    .portfolio-buttons>button>span:first-child {
+        @apply text-2xl text-col-neutral-100 transition duration-500
+    }
+
+    .portfolio-buttons>button:hover>span:first-child {
+        @apply text-col-neutral-900
+    }
+
+    .portfolio-buttons>button>span:last-child {
+        @apply text-left
+    }
+
+    /*SKILLS PAGE*/
+    .marquee {
+        animation: marquee 50s infinite alternate;
+    }
+
+    .marquee:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            /* transform: translateX(-3000%); */
+            transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+        }
+    }
+
+
+    /*CONTACT PAGE*/
+    /*_FORM_*/
+    .warning {
+        color: white;
+        border-color: red;
+        animation: shake 300ms forwards;
+        animation-delay: 500ms;
+    }
+
+    .warning::placeholder {
+        @apply text-red-500
+    }
+
+    @keyframes shake {
+
+        0%,
+        50% {
+            transform: translateX(3px)
+        }
+
+        25% {
+            transform: translateX(-3px)
+        }
+
+        100% {
+            transform: translateX(0)
+        }
+    }
+
+}
