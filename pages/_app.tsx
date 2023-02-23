@@ -11,7 +11,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="icon" type="image/x-icon" href="./r-favicon-with-bg.ico"/>
+        <link rel="icon" type="image/x-icon" href="./r-favicon-with-bg.ico" />
+        <link rel="mask-icon" href="./r-favicon.png"
+          color="#000000"/>
       </Head>
       <Navbar />
       <Component {...pageProps} />

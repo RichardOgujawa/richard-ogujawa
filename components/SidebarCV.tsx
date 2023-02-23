@@ -14,32 +14,32 @@ interface Props {
 }
 //MAIN COMPONENT
 const SidebarCV = ({ hide }: Props) => {
-    //My Attempt at changing the opacity when the scroll changes
-    const [opacity, setOpacity] = useState(0)
+    const [transparency, setTransparency] = useState(0.5)
     let scrollY = 0;
     
-    const okay = (e: any) => {
+    const changeTransparency = (e: any) => {
         scrollY = e.target.scrollTop
-        if(opacity > 1) {
-            setOpacity(1)
+        let value = Math.floor(scrollY * 0.04) / 10 - 0.2
+        console.log(value)
+
+        if(value > 1) {
+            setTransparency(1)
         }
-        setOpacity(Math.floor(scrollY * 0.01));
-        console.log(scrollY, opacity)
+        else if (value < 0.5) {
+            setTransparency(0.5)
+        }
+        else {
+            setTransparency(value);
+        }
+
         return scrollY
     }
-    
-    useEffect(() => {
-        console.log(scrollY)
-    }, [scrollY]);
-    
-    let opacityStr = `${opacity}`
-    //End of my Attempt at changing the opacity when the scroll changes
     return (
-        <div onScroll={okay} className={`${hide ? "hidden" : "block"} md:block w-full md:w-[40%] xl:w-1/4 h-full relative sm:fixed top-[7vh] right-0 bg-mountain bg-cover border-l border-col-neutral-500 overflow-scroll pb-2`}>
+        <div onScroll={changeTransparency} className={`${hide ? "hidden" : "block"} md:block w-full md:w-[40%] xl:w-1/4 h-full relative sm:fixed top-[7vh] right-0 bg-mountain bg-cover border-l border-col-neutral-500 overflow-scroll pb-2`}>
             {/*Black Overlay*/}
-            <div className={`w-full h-[100vh] bg-black absolute transition`} 
+            <div className={`w-full h-[100vh] fixed transition duration-500 ease-out -z-20`} 
              style={{
-                opacity: `0.${opacity}`,
+                backgroundColor: `rgba(0, 0, 0, ${transparency})`,
             }}></div>
             {/*Profile Picture and Ethereum Icons*/}
             <section className='flex w-full h-fit pt-[15vh] mb-[4vh] items-center justify-center gap-6'>
