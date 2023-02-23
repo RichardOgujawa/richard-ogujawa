@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Layout from '../components/Layout'
 import SidebarCV from '../components/SidebarCV'
 import GridTop from '../components/GridTop'
@@ -16,12 +16,12 @@ function ContactTopComponent() {
   })
 }
 
-const Contact = () => {
+const Contact = () => { 
+  const formRef= useRef(null)
   const router = useRouter()
 
-  {
-    /*Form submission handler*/
-  }
+  /*Form submission handler*/
+  
   async function handleOnSubmit(e) {
     //this will prevent the default action of submitting to browser
     e.preventDefault()
@@ -57,7 +57,9 @@ const Contact = () => {
     if (msg && email && fname && lname) {
       router.push(url)
     }
+    
   }
+  // console.log(formRef.current[0])
 
   return (
     <>
@@ -68,6 +70,7 @@ const Contact = () => {
       <Layout hide={false} GridTop={ContactTopComponent} innerContainer>
         <div className="grid w-full place-items-center">
           <form
+           ref={formRef}
             method="post"
             className="inner-container grid gap-4 text-white"
             onSubmit={handleOnSubmit}

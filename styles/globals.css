@@ -26,6 +26,7 @@
     body {
         font-family: "din-condensed", sans-serif;
         font-weight: light;
+        @apply bg-col-neutral-900
     }
 
     input,

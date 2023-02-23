@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="icon" type="image/x-icon" href="./r-favicon-with-bg.ico" />
-        <link rel="mask-icon" href="./r-favicon.png"
+        <link rel="mask-icon" href="./favicon.png"
           color="#000000"/>
       </Head>
       <Navbar />

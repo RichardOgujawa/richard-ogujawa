@@ -31,11 +31,9 @@ const SidebarCV = ({ hide }: Props) => {
         else {
             setTransparency(value);
         }
-
-        return scrollY
     }
     return (
-        <div onScroll={changeTransparency} className={`${hide ? "hidden" : "block"} md:block w-full md:w-[40%] xl:w-1/4 h-full relative sm:fixed top-[7vh] right-0 bg-mountain bg-cover border-l border-col-neutral-500 overflow-scroll pb-2`}>
+        <div onScroll={changeTransparency} className={`${hide ? "hidden w-0" : "block w-full"} md:block md:w-[40%] xl:w-1/4 h-full relative sm:fixed top-[7vh] right-0 bg-mountain bg-cover border-l border-col-neutral-500 overflow-scroll pb-2`}>
             {/*Black Overlay*/}
             <div className={`w-full h-[100vh] fixed transition duration-500 ease-out -z-20`} 
              style={{
