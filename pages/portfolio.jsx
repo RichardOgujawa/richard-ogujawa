@@ -1,57 +1,28 @@
+//Next Imports
 import Head from 'next/head'
-import React from 'react'
+//Component Imports
 import Layout from '../components/Layout'
 import Project from '../components/Project'
 import SidebarCV from '../components/SidebarCV'
+import PortfolioGridTop from '../components/PortfolioGridTop'
 
-import { obj } from '../components/Project'
-import projectsCarouselJSON from '../data/projectsData'
-
-const GridTop = () => {
-  return (
-    <section className='portfolio-buttons'>
-      <div className='grid items-end'>
-        <h1 className='heading'>\Portfolio</h1>
-      </div>
-      <button>
-        <span>Community</span>
-        <span>/ɔːl/ adjective.</span>
-        <span>All the projects that I built with help from people on the online community I was fortunate to build through coding on livestreams.</span>
-      </button>
-      <button>
-        <span>Team</span>
-        <span>[/ˈsəʊləʊ/] adjective.</span>
-        <span>All the projects that I built with a pre-defined set of people, or another person.</span>
-      </button>
-    </section>
-  )
-}
-
-// interface projectsJSONProps {
-//   status: number, 
-//   data: obj[],
-// }
-
+//MAIN COMPONENT
 const Portfolio = ({projectsJSON}) => {
   const projects = projectsJSON.data
   console.log(projectsJSON)
-
   //Checking to see if there are any projects
   let display = false;
-
   if (projects.length === 0) {
     display = false
   } else {
     display = true
   }
-
   return (
     <>
       <Head>
         <title>Richard Ogujawa | Portfolio </title>
       </Head>
-
-      <Layout gridTop={GridTop} center={false}>
+      <Layout GridTop={PortfolioGridTop} center={false}>
         <main className='grid h-full items-start justify-items-center p-4'>
           {!display ?
             <p>Projects coming soon.</p> // If there aren't any projects display "Projects Coming Soon"
@@ -60,7 +31,7 @@ const Portfolio = ({projectsJSON}) => {
               {projects.map((item, index) => {
                   return (
                     <li key={index} className="grid place-items-center">
-                      <Project index={index} item={item} />
+                      <Project index={index} item={item}/>
                     </li>
                   )
                 }
@@ -73,15 +44,10 @@ const Portfolio = ({projectsJSON}) => {
     </>
   )
 }
-
 export default Portfolio
-
 export async function getStaticProps(context) {
   let res = await fetch('http://localhost:3000/api/projects')
-
   let projectsJSON = await res.json(); 
-  // console.log(projectsJSON)
-  
   return {
     props : { projectsJSON }
   }

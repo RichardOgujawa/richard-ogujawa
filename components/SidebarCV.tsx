@@ -60,7 +60,7 @@ const SidebarCV = ({ hide }: Props) => {
             <section className='text-col-neutral-100 flex w-full px-6 justify-between py-2 bg-black-gradient'>
                 <span>Skills:</span>
                 <Link href="/skills">
-                    <span className='link underline'>See full list of skills</span>
+                    <span className='link underline cursor-pointer'>See full list of skills</span>
                 </Link>
             </section>
             <SkillsCarousel />

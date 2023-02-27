@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/GridTopComponent.tsx", "components/GridTopComponent.sx", "pages/contact.jsx", "pages/contact.jsx", "pages/portfolio.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/GridTopComponent.tsx", "components/GridTopComponent.sx", "pages/contact.jsx", "pages/contact.jsx", "pages/portfolio.jsx", "pages/portfolio/coding.jsx"],
   "exclude": ["node_modules"]
 }

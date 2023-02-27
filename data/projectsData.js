@@ -1,103 +1,18 @@
 const projectsCarouselJSON = [
     {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
+        "title": "Portfolio Website",
+        "mainUrl": "https://richard-ogujawa.netlify.app/",
+        "img": "/img/portfolio-website.jpg",
     },
     {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
+        "title": "Genius Clone",
+        "mainUrl": "https://ro-genius.netlify.app/",
+        "img": "/img/genius-clone.jpg",
     },
     {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
-    {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
-    {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
-    {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
-    {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
-    {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
-    {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
-    {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
-    {
-        "projectName": "Portfolio Website",
-        "mainUrl": "https://www.pinterest.ie/pin/42925002691484294/",
-        "githubUrl" : "https://github.com/RichardOgujawa",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper eleifend elit. Aenean auctor ut velit sed convallis.",
-        "img": "/img/ozeum-website-img.jpeg",
-        "date" : 2023,
-        "technologyUsed": ["NextJS", "Tailwind CSS", "MongoDB", "TypeScript", "NodeJS", "Adobe Illustrator", "Adobe Photoshop", "Midjourney", "Adobe XD", "Jira", "Postman"]
-    },
+        "title": "Medium Article Clone",
+        "mainUrl": "https://ro-medium-article.netlify.app/",
+        "img": "/img/medium-article-clone.jpg",
+    }
 ]
-
 export default projectsCarouselJSON

@@ -1,24 +1,11 @@
-//React Imports
-import React, { useEffect, useState, useRef } from "react";
-//Next Imports
-import Image from "next/image";
-import Link from "next/link.js";
-//Data Imports
-import projectsData from "../data/projectsData.js";
-//External Imports
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import Project from './Project'
-
-//MAIN COMPONENT
-const ProjectsCarousel = () => {
-    const [slide, setSlide] = useState(0); //This will keep track of which slide we are on
+ const [slide, setSlide] = useState(0); //This will keep track of which slide we are on
     const [translation, setTranslation] = useState(0); //This will keep track of how far along the slider has moved
     // const ref = React.useRef(null); 
     // const refWidth = ref.current?.clientWidth
     const imgW = 218; //Image Width
     const forwards = () => {
         if(slide < 2) {
-            setSlide(slide < projectsData.length - 1 ? slide + 1 : slide); //Move carousel forward
+            setSlide(slide < data.length - 1 ? slide + 1 : slide); //Move carousel forward
         } else {
             setSlide(2)
         }
@@ -36,7 +23,7 @@ const ProjectsCarousel = () => {
                     style={{
                         transform: `translateX(-${translation}px)`,
                     }}>
-                    {projectsData.map((item, index) => {
+                    {projects.map((item, index) => {
                         if (index > 2) {
                         console.log("Too high")
                         return null
@@ -81,9 +68,7 @@ const ProjectsCarousel = () => {
             </div>
             {/*See rest of portfolio link*/}
             <Link href="/portfolio">
-                <span className="underline text-white mt-10 w-full flex justify-center cursor-pointer">{" "} See More</span>
+                <span className="underline text-white mt-10 w-full flex justify-center">{" "} See More</span>
             </Link>
         </>
     );
-};
-export default ProjectsCarousel

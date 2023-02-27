@@ -4,7 +4,6 @@ import Head from 'next/head.js'
 import Layout from '../../components/Layout'
 import SidebarCV from '../../components/SidebarCV'
 // import obj from '../../pages/portfolio'
-
 interface Project {
     _id: string,
     mainUrl: string,
@@ -20,18 +19,12 @@ interface Project {
 interface Props {
   project : Project
 }
-
-
-
+function GridTop(prop : Project){
+  return(<p>hi {prop.title} </p>)
+}
 const ProjectName = ({ project } : Props ) => {
   const router = useRouter()
   const { projectName } = router.query
-
-  // function GridTop(){
-
-  //   console.log(project)
-  //   return(<p>{project.date}</p>)
-  // }
 
   // console.log(project)
   return (
@@ -39,17 +32,14 @@ const ProjectName = ({ project } : Props ) => {
       <Head>
         <title>Richard Ogujawa | {project.title}</title>
       </Head>
-
-      <Layout innerContainer>
+      <Layout GridTop={GridTop(project)} innerContainer>
         
       </Layout>
       <SidebarCV/>
     </>
   )
 }
-
 export default ProjectName
-
 export async function getServerSideProps(context : any) {
   console.log(context)
   const res = await fetch(`http://localhost:3000/api/projects?project=${context.query.projectName}`)

@@ -16,5 +16,4 @@ const MainMenu = ({ column, underlineLeft }: Props) => {
         </ul>
     );
 }
-
 export default MainMenu

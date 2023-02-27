@@ -209,7 +209,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
-        @apply w-full h-full gap-x-4 gap-y-2 p-4
+        @apply w-full h-full gap-3 p-4
     }
 
     .portfolio-buttons>button {

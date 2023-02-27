@@ -6,6 +6,7 @@ import { FiExternalLink } from 'react-icons/fi'
 //Props
 interface Props {
     index: number,
+    gap: string,
     slide?: number,
     item: obj,
 }
@@ -20,13 +21,14 @@ export interface obj {
     technologyUsed: string[],
     title: string,
     projectId: string,
+    type: string,
 }
 //MAIN COMPONENT
-const Project = ({ index, slide, item }: Props) => {
+const Project = ({ index, slide, item}: Props) => {
     return (
-        <Link href={`/projects/${item.projectId}`}>
-            <div className="relative carousel-item w-[225px] aspect-square grid place-content-center overflow-hidden border-[7px] cursor-pointer">
-                <div className={`relative w-[218px] aspect-square`}>
+        <Link href={item.mainUrl}>
+            <div className={`relative carousel-item w-[225px] aspect-square grid overflow-hidden border-[7px] cursor-pointer`}>
+                <div className={`relative w-[218px] hover:scale-110 aspect-square transition duration-700 ease-out`}>
                     <Image
                         src={item.img}
                         alt=" "

@@ -12,14 +12,12 @@ import GridTop from '../components/GridTop'
 import skillsJSON from '../data/skillsData'
 import skillsInfo from '../data/textTop.json'
 //Function that renders custom top component of grid in layout component
-
 function ContactTopComponent() {
     return GridTop({
         title: skillsInfo.skills.title,
         subtitle: skillsInfo.skills.subtitle,
     })
 }
-
 //MAIN COMPONENT
 const Skills: NextPage = () => {
     return (
@@ -28,17 +26,13 @@ const Skills: NextPage = () => {
                 <title>Richard Ogujawa | Skills</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
             <Layout GridTop={ContactTopComponent} innerContainer>
                 <div className='grid place-items-center'>
                     <SkillsList />
                 </div>
             </Layout>
-
-            <SidebarCV />
-
+            <SidebarCV hide/>
         </>
     )
 }
-
 export default Skills

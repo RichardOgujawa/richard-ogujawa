@@ -26,11 +26,10 @@ const Contact = () => {
         <title>Richard Ogujawa | Contact </title>
       </Head>
 
-      <Layout hide={false} GridTop={ContactTopComponent} innerContainer>
+      <Layout hide={false} GridTop={ContactTopComponent} innerContainer center>
         <div className="grid w-full place-items-center">
           <form method="post"
       action="https://www.flexyform.com/f/55379a9999b43447363e5dc105a9411ed231b1c0"
-           ref={formRef}
             className="inner-container grid gap-4 text-white"
           >
             <div className="flex w-full gap-5">
@@ -69,7 +68,7 @@ const Contact = () => {
             <div className="">
               <button
                 type="submit"
-                className="w-full border border-col-neutral-250 py-1 text-center transition duration-500 hover:bg-col-neutral-250 hover:text-col-neutral-900"
+                className="w-full border border-col-neutral-250 py-1 text-center transition duration-500 hover:bg-col-neutral-100 hover:text-col-neutral-900"
               >
                 Send Message
               </button>
@@ -84,9 +83,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-//Check if all inputs are filled (useEffect)
-//If so change state to true
-//If not keep state false
-
-// mongodb://mongos0.example.com:27017,mongos1.example.com:27017,mongos2.example.com:27017
