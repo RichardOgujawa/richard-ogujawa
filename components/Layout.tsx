@@ -1,7 +1,8 @@
+import { ReactNode } from "react"
 //Props
 interface Props {
-    children: any,
-    GridTop?: any,
+    children?: ReactNode,
+    GridTop?: ReactNode,
     hide?: boolean,
     innerContainer?: boolean,
     center?: boolean
@@ -16,7 +17,7 @@ const Layout = ({ children, GridTop, hide, innerContainer, center = true }: Prop
                 {/*Grid Top Content*/}
                 <div className={`complex-grid-heading border border-col-neutral-250 border-b-0 border-t-0 grid ${innerContainer && "content-end place-items-center px-4 pb-6 "}`}>
                     <div className={`${innerContainer && "inner-container grid gap-1"}`}>
-                        <GridTop />
+                        {GridTop ? <GridTop/> : null}
                     </div>
                 </div>
                 {/*Empty Space*/}
@@ -26,7 +27,7 @@ const Layout = ({ children, GridTop, hide, innerContainer, center = true }: Prop
                 {/*Main Content*/}
                 <main className={`complex-grid-item complex-grid-list sm:grid w-full h-full ${center && "justfy-items-center items-center"}`}>
                     <section className='px-4 w-full'>
-                        {children}
+                        {children ? children : null}
                     </section>
                 </main >
                 {/*Empty Space*/}
