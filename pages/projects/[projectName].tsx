@@ -27,14 +27,20 @@ const ProjectName = ({ project } : Props ) => {
   const router = useRouter()
   const { projectName } = router.query
 
-  console.log(project)
+  // function GridTop(){
+
+  //   console.log(project)
+  //   return(<p>{project.date}</p>)
+  // }
+
+  // console.log(project)
   return (
     <>
       <Head>
         <title>Richard Ogujawa | {project.title}</title>
       </Head>
 
-      <Layout>
+      <Layout innerContainer>
         
       </Layout>
       <SidebarCV/>

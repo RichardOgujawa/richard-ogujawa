@@ -20,47 +20,6 @@ const Contact = () => {
   const formRef= useRef(null)
   const router = useRouter()
 
-  /*Form submission handler*/
-  
-  async function handleOnSubmit(e) {
-    //this will prevent the default action of submitting to browser
-    e.preventDefault()
-    console.log(e)
-    const formArr = Array.from(e.currentTarget)
-    const formArrWithoutBtn = formArr.pop()
-
-    const formData = {}
-    formArr.forEach((field) => {
-      if (field == 'button') {
-        console.log('found button')
-      }
-      if (!field.value) {
-        field.classList.add('warning')
-      } else {
-        field.classList.remove('warning')
-        formData[field.name] = field.value
-      }
-    })
-
-    fetch('/api/mail', {
-      method: 'post',
-      body: JSON.stringify(formData),
-    })
-
-    console.log(formData)
-    const email = formData.email
-    const fname = formData.fname
-    const lname = formData.lname
-    const msg = formData.message
-    const url = `mailto:richardogujawa7@gmail.com?subject=${"Let\\'s work"}&body=${msg}`
-
-    if (msg && email && fname && lname) {
-      router.push(url)
-    }
-    
-  }
-  // console.log(formRef.current[0])
-
   return (
     <>
       <Head>
@@ -69,11 +28,10 @@ const Contact = () => {
 
       <Layout hide={false} GridTop={ContactTopComponent} innerContainer>
         <div className="grid w-full place-items-center">
-          <form
+          <form method="post"
+      action="https://www.flexyform.com/f/55379a9999b43447363e5dc105a9411ed231b1c0"
            ref={formRef}
-            method="post"
             className="inner-container grid gap-4 text-white"
-            onSubmit={handleOnSubmit}
           >
             <div className="flex w-full gap-5">
               <div className="grid flex-1">
