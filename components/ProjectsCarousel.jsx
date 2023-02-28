@@ -38,7 +38,6 @@ const ProjectsCarousel = () => {
                     }}>
                     {projectsData.map((item, index) => {
                         if (index > 2) {
-                        console.log("Too high")
                         return null
                         }
                         else {
@@ -68,7 +67,6 @@ const ProjectsCarousel = () => {
             <div className="flex gap-4 mt-14 h-fit w-full justify-center">
                 {projectsData.map((item, index) => {
                     if (index > 2) {
-                    console.log("Too high")
                     return null
                     } else {
                     return (<span key={index} onClick = {() => setSlide(index)}
