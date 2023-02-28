@@ -3,7 +3,7 @@ import { ReactNode } from "react"
 //Props
 interface Props {
     children?: ReactNode,
-    GridTop?: ReactNode,
+    GridTop?: any,
     hide?: boolean,
     innerContainer?: boolean,
     center?: boolean
