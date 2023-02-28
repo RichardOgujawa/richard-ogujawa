@@ -1,4 +1,2 @@
-- Layout component not showing 
-- Convert code to TypeScript
-- How to make a contact form that sends input to an email
-- How to fix issue with JavaScript for Genius.com website
+- Learn how to turn your code into TypeScript
+- Merge the two branches
