@@ -34,7 +34,7 @@ const Portfolio = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
         const getData = async () => {
-            let res = await fetch(`${window.location.origin}/api/projects?filter=coding`)
+            let res = await fetch(`${window.location.origin}/api/projects?filter=creative`)
             let projectsJSON = (await res.json()).data;
             setProjects(projectsJSON)
         }
