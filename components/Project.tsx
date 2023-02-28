@@ -3,34 +3,35 @@ import Image from 'next/image'
 import Link from 'next/link.js'
 //External Imports
 import { FiExternalLink } from 'react-icons/fi'
+import { Url } from 'url'
 //Props
 interface Props {
     index: number,
-    gap: string,
+    gap?: string,
     slide?: number,
-    item: obj,
+    item: projectProps,
 }
-export interface obj {
-    _id: string,
-    mainUrl: string,
-    githubUrl: string,
-    description: string,
-    shortDescription: string,
-    img: string,
-    date: number,
-    technologyUsed: string[],
-    title: string,
-    projectId: string,
-    type: string,
+export interface projectProps {
+    _id?: string,
+    mainUrl?: string,
+    githubUrl?: string,
+    description?: string,
+    shortDescription?: string,
+    img?: string,
+    date?: number,
+    technologyUsed?: string[],
+    title?: string,
+    projectId?: string,
+    type?: string,
 }
 //MAIN COMPONENT
 const Project = ({ index, slide, item}: Props) => {
     return (
-        <Link href={item.mainUrl}>
+        <Link href={item.mainUrl ?? ""}>
             <div className={`relative carousel-item w-[225px] aspect-square grid overflow-hidden border-[7px] cursor-pointer`}>
                 <div className={`relative w-[218px] hover:scale-110 aspect-square transition duration-700 ease-out`}>
                     <Image
-                        src={item.img}
+                        src={item.img ?? ""}
                         alt=" "
                         objectFit="cover"
                         sizes="100"

@@ -3,14 +3,13 @@ import type {NextPage } from 'next'
 import Head from 'next/head'
 //Component Imports
 import SidebarCV from '../components/SidebarCV'
-
+//MAIN COMPONENT
 const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>Richard Ogujawa</title>
       </Head>
-
       <main className='hidden sm:grid  bg-hero-img-gone md:bg-mobile-hero-img md:bg-[right] xl:bg-hero-img w-full h-[100vh] bg-cover bg-center justify-start'>
         <div className="text-white pl-[2rem] md:pl-[4rem] w-full h-full grid items-center">
           <div className=''>
@@ -22,12 +21,9 @@ const Home: NextPage = () => {
           <span className='text-white text-sm'>&copy; 2023 </span>
         </footer>
       </main >
-
       <SidebarCV/>
     </>
   )
 }
-
 export default Home
-
 

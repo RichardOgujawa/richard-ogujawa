@@ -8,7 +8,6 @@ import projectsData from "../data/projectsData.js";
 //External Imports
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import Project from './Project'
-
 //MAIN COMPONENT
 const ProjectsCarousel = () => {
     const [slide, setSlide] = useState(0); //This will keep track of which slide we are on
@@ -17,7 +16,7 @@ const ProjectsCarousel = () => {
     // const refWidth = ref.current?.clientWidth
     const imgW = 218; //Image Width
     const forwards = () => {
-        if(slide < 2) {
+        if (slide < 2) {
             setSlide(slide < projectsData.length - 1 ? slide + 1 : slide); //Move carousel forward
         } else {
             setSlide(2)
@@ -38,16 +37,17 @@ const ProjectsCarousel = () => {
                     }}>
                     {projectsData.map((item, index) => {
                         if (index > 2) {
-                        return null
+                            return null
                         }
                         else {
-                        return (
-                            <li key={index}
-                            className={`bg-white transition duration-500 ${index === slide ? "opacity-100 scale-105" : "opacity-70"
-                                }`}>
-                                <Project index={index} item={item} slide={slide} />
-                            </li>
-                        )}
+                            return (
+                                <li key={index}
+                                    className={`bg-white transition duration-500 ${index === slide ? "opacity-100 scale-105" : "opacity-70"
+                                        }`}>
+                                    <Project index={index} item={item} slide={slide} />
+                                </li>
+                            )
+                        }
                     })}
                 </ul>
                 {/*Backwards Arrow for Carousel*/}
@@ -67,12 +67,12 @@ const ProjectsCarousel = () => {
             <div className="flex gap-4 mt-14 h-fit w-full justify-center">
                 {projectsData.map((item, index) => {
                     if (index > 2) {
-                    return null
+                        return null
                     } else {
-                    return (<span key={index} onClick = {() => setSlide(index)}
-                        className={` min-w-[40px] h-[5px] hover:bg-white cursor-pointer transition duration-500 ${index === slide ? "bg-white" : "bg-white/60"
-                            }`}
-                    ></span>)
+                        return (<span key={index} onClick={() => setSlide(index)}
+                            className={` min-w-[40px] h-[5px] hover:bg-white cursor-pointer transition duration-500 ${index === slide ? "bg-white" : "bg-white/60"
+                                }`}
+                        ></span>)
                     }
                 }
                 )}
