@@ -11,7 +11,7 @@ interface Props {
 //MAIN COMPONENT
 const SideNav : React.FC<Props> = ({ active, click }) => {
     return (
-        <nav className='fixed'>
+        <nav className='fixed md:hidden'>
             <div className={`mobile-menu ${active ? "translate-x-0" : "translate-x-full"}`}>
                 {/*Close Button*/}
                 <div className="grid items-start justify-end p-6">
@@ -21,7 +21,8 @@ const SideNav : React.FC<Props> = ({ active, click }) => {
                 </div>
                 {/*Side Navigation Menu*/}
                 <div className="grid items-start">
-                    <MainMenu column underlineLeft />
+                    <MainMenu column/>
+                    
                 </div>
                 {/*Social Media Menu*/}
                 <div className="grid self-end justify-start bottom-padding pl-[2rem]">

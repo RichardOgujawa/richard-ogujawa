@@ -131,7 +131,7 @@
 
     /*Navigation*/
     /*--Menu Items without Underline*/
-    .menuItems>li,
+    .menuItem > li
     .menuItemsWUnderline>li,
     .menuItemsWUnderlineLeft>li {
         position: relative;
@@ -165,7 +165,7 @@
         top: 50%;
         left: 0%;
 
-        transform: translateY(-50%);
+        /* transform: translateY(-50%); */
 
         background-color: hsl(var(--col-neutral-100));
     }

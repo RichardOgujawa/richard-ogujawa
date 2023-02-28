@@ -32,11 +32,11 @@ const Portfolio = () => {
         <title>Richard Ogujawa | Portfolio </title>
       </Head>
       <Layout GridTop={PortfolioGridTop} center={false}>
-        <main className='grid h-full items-start justify-items-center p-4'>
+        <main className='grid h-full items-start justify-items-center p-4 py-10'>
           {!display ?
             <p>Projects loading...</p> // If there aren't any projects display "Projects Coming Soon"
             :
-            <ul className='grid grid-cols-1 gap-3 lg:grid-cols-2 lg:gap-4 xl:grid-cols-3 xl:gap-6 w-[90%]'> {/*If there are projects display them*/}
+            <ul className='grid sm:grid-cols-2 md:grid-cols-1 gap-3 lg:grid-cols-2 lg:gap-4 xl:grid-cols-3 xl:gap-6 w-[90%]'> {/*If there are projects display them*/}
               {projects.map((item, index) => {
                 return (
                   <li key={index} className="grid place-items-center">

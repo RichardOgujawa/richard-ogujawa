@@ -3,16 +3,15 @@ import Link from 'next/link'
 //Props
 interface Props {
     column?: boolean,
-    underlineLeft?: boolean,
 }
 //MAIN COMPONENT
-const MainMenu = ({ column, underlineLeft }: Props) => {
+const MainMenu = ({ column }: Props) => {
     return (
-        <ul className={`flex ${column ? "flex-col" : ""} gap-5 ${underlineLeft ? "menuItemsWUnderlineLeft" : "menuItemsWUnderline"}`}>
-            <li><Link href="/"><a className='h-full w-full grid items-center'>Home.</a></Link></li>
-            <li><Link href="/portfolio"><a className='h-full w-full grid items-center'>Portfolio.</a></Link></li>
-            <li><Link href="/contact"><a className='h-full w-full grid items-center'>Contact.</a></Link></li>
-            <li><Link href="/skills"><a className='h-full w-full grid items-center'>Skills.</a></Link></li>
+        <ul className={`flex ${column ? "flex-col" : "menuItemsWUnderline"} gap-5 pl-4`}>
+            <li><Link href="/"><a className='h-fit w-full grid items-center'>Home.</a></Link></li>
+            <li><Link href="/portfolio"><a className='h-fit w-full grid items-center'>Portfolio.</a></Link></li>
+            <li><Link href="/contact"><a className='h-fit w-full grid items-center'>Contact.</a></Link></li>
+            <li><Link href="/skills"><a className='h-fit w-full grid items-center'>Skills.</a></Link></li>
         </ul>
     );
 }
