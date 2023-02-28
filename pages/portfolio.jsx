@@ -9,7 +9,6 @@ import PortfolioGridTop from '../components/PortfolioGridTop'
 //MAIN COMPONENT
 const Portfolio = ({projectsJSON}) => {
   const projects = projectsJSON.data
-  console.log(projectsJSON)
   //Checking to see if there are any projects
   let display = false;
   if (projects.length === 0) {
