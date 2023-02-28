@@ -131,7 +131,7 @@
 
     /*Navigation*/
     /*--Menu Items without Underline*/
-    .menuItem > li
+    .menuItem,
     .menuItemsWUnderline>li,
     .menuItemsWUnderlineLeft>li {
         position: relative;
