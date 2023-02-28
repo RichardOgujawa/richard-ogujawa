@@ -1,3 +1,5 @@
+//React Imports
+import { useEffect, useState } from 'react'
 //Next Imports
 import Head from 'next/head'
 //Component Imports
@@ -8,7 +10,19 @@ import PortfolioGridTop from '../components/PortfolioGridTop'
 
 //MAIN COMPONENT
 const Portfolio = ({projectsJSON}) => {
-  const projects = projectsJSON.data
+  // const projects = projectsJSON.data
+  const[projects, setProjects] = useState([]);
+
+  useEffect(()=> {
+    const getData = async () => {
+        let res = await fetch(`${window.location.origin}/api/projects`)
+        let projectsJSON = (await res.json()).data; 
+        
+        setProjects(projectsJSON)
+    }
+    getData();
+  }, [])
+
   //Checking to see if there are any projects
   let display = false;
   if (projects.length === 0) {
@@ -44,10 +58,12 @@ const Portfolio = ({projectsJSON}) => {
   )
 }
 export default Portfolio
-export async function getStaticProps(context) {
-  let res = await fetch('http://localhost:3000/api/projects')
-  let projectsJSON = await res.json(); 
-  return {
-    props : { projectsJSON }
-  }
-}
+// export async function getStaticProps(context) {
+//   console.log(context)
+//   // let res = await fetch(`${window.location.origin}/api/projects`)
+//   let res = await fetch(`http://localhost/api/projects`)
+//   let projectsJSON = await res.json(); 
+//   return {
+//     props : { projectsJSON }
+//   }
+// }
