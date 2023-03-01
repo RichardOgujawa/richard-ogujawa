@@ -20,7 +20,6 @@ const SidebarCV = ({ hide }: Props) => {
     const changeTransparency = (e: any) => {
         scrollY = e.target.scrollTop
         let value = Math.floor(scrollY * 0.04) / 10 - 0.2
-        console.log(value)
 
         if(value > 1) {
             setTransparency(1)

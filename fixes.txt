@@ -1,4 +1,0 @@
-- Learn how to turn your code into TypeScript
-- Fix MongoDB performance issue 
-- Why it's not deploying https://vercel.com/richardogujawa/richardogujawa/FzeBsB2k5bPaKhNaC9RCrjz63SKG
-- Create an artistic CV

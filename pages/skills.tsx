@@ -24,7 +24,6 @@ const Skills: NextPage = () => {
         <>
             <Head>
                 <title>Richard Ogujawa | Skills</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
             <Layout GridTop={ContactTopComponent} innerContainer>
                 <div className='grid place-items-center'>

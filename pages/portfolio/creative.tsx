@@ -47,7 +47,6 @@ const Portfolio = () => {
     } else {
         display = true
     }
-    console.log(projects)
     return (
         <>
             <Head>

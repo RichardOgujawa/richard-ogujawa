@@ -1,33 +1,33 @@
-# Next.js + Tailwind CSS + MongoDB + TypeScript Example.
+# Porfolio Website
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3), [MongoDB](https://www.mongodb.com/developer/how-to/nextjs-with-mongodb/) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs) & [MongoDB docs](https://docs.mongodb.com/manual/tutorial/nextjs/).
+This is [my portfolio website](https://www.richardogujawa.com) made using NextJS, Typescript, Tailwind CSS, and MongoDB. 
 
-## Simple Hack:
- Go to **[`.env.local.example`](/.env.local.example):-** file add your MongoDB **connection String** to **MONGODB_URI** and rename it to **.env.local.**
-Then, run 
-```bash
-npm run dev
-# or
-yarn run dev
-```
+This was my first real build using NextJS, and I learned a lot from it: 
+- How to use TypeScript as opposed to JavaScript because it can help you identify bugs early and easily.
+- How to perform CRUD operations on a database
+- How to use Tailwind CSS in conjunction with normal CSS to rapidly style your page.
 
- to start the server.
+This was a big step up for me, given that up until this point I was pretty much stuck on building things from scratch using HTML, CSS and Javascript, and procrastinated going into React for a looooong time. However, learning NextJS opened my eyes up to the limitations of those intial three languages and how much fun learning new ones can be. 
 
-## Deploy your own
+I'm a lot more curious about what else is out there, and am now looking into ReactJS, and down the line hope to venture into languages like Java, Flutter, C# and Python.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+The original design of the website was done in Adobe XD, and the logos and icons were tweaked and manipulatd using Photoshop and Illustrator. 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Homepage
+![Original Hompage design](/public/img/home.jpg)
 
-## How to use
+## Portfolio Page
+![Original Portfolio Page design](/public/img/portfolio-gallery.jpg)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Skills Page
+![Original Skills Page design](/public/img/skills.jpg)
 
-```bash
-npx create-next-app -e https://github.com/theabhayprajapati/Next.js-TailwindCSS-MongoDB-TS with-mongo-tail-app
-# or
-yarn create-next-app -e https://github.com/theabhayprajapati/Next.js-TailwindCSS-MongoDB-TS with-mongo-tail-app
-```
+## Contact Page
+![Original Contact Page design](/public/img/contact.jpg)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-# Next.js-TailwindCSS-MongoDB-TS
+## Mobile View
+![Original Mobile View design](/public/img/mobile-menu.jpg)
+
+### Acknowledgement
+Thank you Charles Alexis, GT Osarobo and Ollie O. for helping me out with some of the issues I ran into while building this. Had some great conversations as we debugged code and learned a lot from you all, and I hope you had a good time and got some value too!
+

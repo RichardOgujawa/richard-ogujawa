@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 //React Imports
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 //Component Imports
 import Layout from '../components/Layout'
 import SidebarCV from '../components/SidebarCV'
@@ -19,8 +19,6 @@ function ContactTopComponent() {
 }
 //MAIN COMPONENT
 const Contact = () => { 
-  const formRef= useRef(null)
-  const router = useRouter()
   return (
     <>
       <Head>
@@ -28,35 +26,43 @@ const Contact = () => {
       </Head>
       <Layout hide={false} GridTop={ContactTopComponent} innerContainer center>
         <div className="grid w-full place-items-center">
-          <form method="post"
-      action="https://www.flexyform.com/f/55379a9999b43447363e5dc105a9411ed231b1c0"
+          <form 
+            method="post"
+            action="https://www.flexyform.com/f/55379a9999b43447363e5dc105a9411ed231b1c0"
             className="inner-container grid gap-4 text-white"
           >
             <div className="flex w-full gap-5">
               <div className="grid flex-1">
-                <label htmlFor="fname">First Name</label>
+                <label htmlFor="fname">First Name </label>
                 <input
                   className=""
                   type="text"
                   name="fname"
                   placeholder="Jeremiah"
+                  required
                 />
               </div>
               <div className="grid flex-1">
-                <label htmlFor="lname">Last Name</label>
-                <input type="text" name="lname" placeholder="Doe" />
+                <label htmlFor="lname">Last Name </label>
+                <input 
+                type="text" 
+                name="lname" 
+                placeholder="Doe" 
+                required
+                />
               </div>
             </div>
             <div className="grid">
-              <label htmlFor="email">Email Address</label>
+              <label htmlFor="email">Email Address </label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="sebastian.doe@gmail.com"
+                required
               />
             </div>
             <div className="grid">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">Message </label>
               <textarea
                 name="message"
                 id="message"
