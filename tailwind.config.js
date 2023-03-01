@@ -53,7 +53,7 @@ module.exports = {
         'hero-img-gone': "linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url('/img/background-profile.jpg')",
         'mobile-hero-img': "linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)), url('/img/background-profile.jpg')",
         'hero-img': "url('/img/background-profile.jpg')",
-        'mountain': "url('/img/mountain-bg.jpg')",
+        'mountain': "url('/img/mountain-bg.svg')",
         'cv-bg-gradient': "linear-gradient(180deg, rgba(34,28,26,1) 0%, rgba(18,18,18,1) 35%, rgba(23,22,22,1) 100%)",
         'black-gradient': 'linear-gradient(180deg, rgb(149, 139, 139) -10%, rgb(4, 2, 0) 50%, rgb(4, 2, 0) 75%, rgba(149, 139, 139, 0.55) 130%);'
       },

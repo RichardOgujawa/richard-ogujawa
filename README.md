@@ -29,5 +29,5 @@ The original design of the website was done in Adobe XD, and the logos and icons
 ![Original Mobile View design](/public/img/mobile-menu.jpg)
 
 ### Acknowledgement
-Thank you Charles Alexis, GT Osarobo and Ollie O. for helping me out with some of the issues I ran into while building this. Had some great conversations as we debugged code and learned a lot from you all, and I hope you had a good time and got some value too!
+Thank you Charles Alexis, GT Osarobo and Ollie O. for helping me out with some of the issues I ran into while building this. 
 
