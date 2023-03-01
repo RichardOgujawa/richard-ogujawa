@@ -19,8 +19,6 @@ function ContactTopComponent() {
 }
 //MAIN COMPONENT
 const Contact = () => { 
-  const formRef= useRef(null)
-  const router = useRouter()
   return (
     <>
       <Head>
