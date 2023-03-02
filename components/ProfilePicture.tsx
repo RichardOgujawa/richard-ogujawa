@@ -10,6 +10,7 @@ const ProfilePicture = () => {
                 objectFit = "cover"
                 sizes="100"
                 layout = "fill"
+                priority
             />
         </div>
     )

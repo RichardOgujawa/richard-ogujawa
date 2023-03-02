@@ -17,6 +17,7 @@ const Marquee = () => {
                                     objectFit="contain"
                                     sizes="100"
                                     layout="fill"
+                                    priority
                                 />
                             </div>
                         </li >

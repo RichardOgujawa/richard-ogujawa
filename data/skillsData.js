@@ -4,6 +4,10 @@ const skillsData = [
         'img': '/img/next-js-logo.svg',
     },
     {
+        'skill': 'TypeScript',
+        'img': '/img/typescript-logo.png',
+    },
+    {
         'skill': 'MongoDB',
         'img': '/img/mongo-db-logo.svg',
     },

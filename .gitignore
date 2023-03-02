@@ -37,5 +37,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-#adobe 
+#adobe files
 /adobe
+
+#test folder
+/test
