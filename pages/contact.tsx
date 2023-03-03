@@ -69,6 +69,7 @@ const Contact = () => {
                 cols={30}
                 rows={10}
                 placeholder="Write your message here..."
+                required
               />
             </div>
             <div className="">

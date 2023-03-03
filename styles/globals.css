@@ -65,7 +65,7 @@
     }
     /*_MOBILE MENU_*/
     .mobile-menu {
-        @apply border-l border-col-neutral-250 fixed text-col-neutral-100 transition top-0 right-0 h-[100vh] w-[60%] grid bg-col-neutral-900/[85%] 
+        @apply border-l border-col-neutral-250 fixed text-col-neutral-100 transition top-0 right-0 h-[100vh] w-[60%] grid bg-col-neutral-900/[80%] 
     }
     .social-media-icon {
         @apply h-full grid items-center
@@ -178,8 +178,11 @@
         @apply text-left
     }
     /*SKILLS PAGE*/
+    .skills-list > *:not(:last-child){
+        @apply border-b 
+    }
     .marquee {
-        animation: marquee 50s infinite alternate;
+        animation: marquee 35s infinite alternate;
     }
     .marquee:hover {
         animation-play-state: paused;

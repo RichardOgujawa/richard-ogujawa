@@ -1,7 +1,7 @@
 const projectsCarouselJSON = [
     {
         "title": "Portfolio Website",
-        "mainUrl": "https://richard-ogujawa.netlify.app/",
+        "mainUrl": "https://www.richardogujawa.com/",
         "img": "/img/portfolio-website.jpg",
     },
     {

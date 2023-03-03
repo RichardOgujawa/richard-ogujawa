@@ -12,7 +12,7 @@ interface Props {
 const SideNav : React.FC<Props> = ({ active, click }) => {
     return (
         <nav className='fixed md:hidden'>
-            <div className={`mobile-menu ${active ? "translate-x-0" : "translate-x-full"}`}>
+            <div className={`mobile-menu backdrop-blur-[4.5px] ${active ? "translate-x-0" : "translate-x-full"}`}>
                 {/*Close Button*/}
                 <div className="grid items-start justify-end p-6">
                     <button type="button" onClick={click}>

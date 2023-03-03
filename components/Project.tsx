@@ -1,9 +1,7 @@
 //Next Imports
 import Image from 'next/image'
-import Link from 'next/link.js'
 //External Imports
 import { FiExternalLink } from 'react-icons/fi'
-import { Url } from 'url'
 //Props
 interface Props {
     index: number,
@@ -25,9 +23,9 @@ export interface projectProps {
     type?: string,
 }
 //MAIN COMPONENT
-const Project = ({ index, slide, item}: Props) => {
+const Project = ({item}: Props) => {
     return (
-        <Link href={item.mainUrl ?? ""}>
+        <a href={item.mainUrl ?? ""} target="_blank" rel="noreferrer">
             <div className={`relative carousel-item w-[225px] aspect-square grid overflow-hidden border-[7px] cursor-pointer`}>
                 <div className={`relative w-[218px] hover:scale-110 aspect-square transition duration-700 ease-out`}>
                     <Image
@@ -48,7 +46,7 @@ const Project = ({ index, slide, item}: Props) => {
                     </p>
                 </div>
             </div>
-        </Link>
+        </a>
     )
 }
 

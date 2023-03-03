@@ -6,11 +6,6 @@ const SkillsCarousel = () => {
         <div className='border-y border-col-neutral-500/40 overflow-hidden bg-black'>
             <div className='h-[7vh] w-full flex gap-1 -translate-x-10 items-center marquee'>
                 <Marquee />
-                <Marquee />
-                <Marquee />
-                <Marquee />
-                <Marquee />
-                <Marquee />
             </div>
         </div>
     )

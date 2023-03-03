@@ -1,7 +1,15 @@
 const skillsData = [
     {
-        'skill': 'Nextjs',
+        'skill': 'React.js',
+        'img': '/img/react-js-logo.png',
+    },
+    {
+        'skill': 'Next.js',
         'img': '/img/next-js-logo.svg',
+    },
+    {
+        'skill': 'Python',
+        'img': '/img/python-logo.png',
     },
     {
         'skill': 'TypeScript',

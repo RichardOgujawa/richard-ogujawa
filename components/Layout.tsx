@@ -26,7 +26,7 @@ const Layout = ({ children, GridTop, hide, innerContainer, center = true }: Prop
                 {/*Empty Space*/}
                 <div className='border border-col-neutral-250 border-x-0'></div>
                 {/*Main Content*/}
-                <main className={`complex-grid-item complex-grid-list ${!hide ? "sm:grid" : ""} w-full h-full ${center && "justfy-items-center items-center"}`}>
+                <main className={`complex-grid-item complex-grid-list ${!hide ? "sm:grid" : ""} w-full h-full grid items-center ${center && "md:justfy-items-center md:items-center"}`}>
                     <section className='px-4 w-full'>
                         {children ? children : null}
                     </section>

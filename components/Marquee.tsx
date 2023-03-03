@@ -10,7 +10,7 @@ const Marquee = () => {
                 skillsData.map((item, index) => {
                     return (
                         <li key={index} className="">
-                            <div className='relative w-[100px] h-[40px] opacity-50 flex place-items-center'>
+                            <div className='relative w-[100px] h-[40px] opacity-50 flex place-items-center brightness-0 invert'>
                                 <Image
                                     src={item.img} 
                                     alt=" "
