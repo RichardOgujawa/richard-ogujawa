@@ -8,8 +8,8 @@ const skillsData = [
         'img': '/img/next-js-logo.svg',
     },
     {
-        'skill': 'Python',
-        'img': '/img/python-logo.png',
+        'skill': 'React Native',
+        'img': '/img/react-native-logo.png',
     },
     {
         'skill': 'TypeScript',
@@ -20,8 +20,20 @@ const skillsData = [
         'img': '/img/mongo-db-logo.svg',
     },
     {
+        'skill': 'Firebase',
+        'img': '/img/firebase-logo.png',
+    },
+    {
         'skill': 'Tailwind CSS',
         'img': '/img/tailwind-logo.svg',
+    },
+     {
+        'skill': 'Redux',
+        'img': '/img/redux-logo.png',
+    },
+     {
+        'skill': 'Sanity.io',
+        'img': '/img/sanity-logo.png',
     },
     {
         'skill': 'HTML',
@@ -38,10 +50,6 @@ const skillsData = [
     {
         'skill': 'Javascript',
         'img': '/img/js-logo.svg',
-    },
-    {
-        'skill': 'CLI',
-        'img': '/img/cli-logo.svg',
     },
     {
         'skill': 'Github',
@@ -61,7 +69,7 @@ const skillsData = [
     },
     {
         'skill': 'Adobe Illustrator',
-        'img': '/img/ps-logo.svg',
+        'img': '/img/ai-logo.svg',
     },
     {
         'skill': 'Adobe XD',
