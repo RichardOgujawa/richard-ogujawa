@@ -1,8 +1,8 @@
 const projectsCarouselJSON = [
     {
-        "title": "Portfolio Website",
-        "mainUrl": "https://www.richardogujawa.com/",
-        "img": "/img/portfolio-website.jpg",
+        "title": "Basiligo Mobile App"
+        "mainUrl": "https://www.linkedin.com/in/ogujawa-richard/",
+        "img": "/img/basiligo-thumbnail.png",
     },
     {
         "title": "Genius Clone",
