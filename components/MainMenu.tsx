@@ -2,17 +2,31 @@
 import Link from 'next/link'
 //Props
 interface Props {
-    column?: boolean,
+  column?: boolean
 }
+const mobileMenuLinks = ['Home', 'Portfolio', 'Contact', 'Skills']
 //MAIN COMPONENT
 const MainMenu = ({ column }: Props) => {
-    return (
-        <ul className={`flex ${column ? "flex-col" : "menuItemsWUnderline"} gap-5 pl-4`}>
-            <li><Link href="/"><a className='h-fit w-full grid items-center'>Home.</a></Link></li>
-            <li><Link href="/portfolio"><a className='h-fit w-full grid items-center'>Portfolio.</a></Link></li>
-            <li><Link href="/contact"><a className='h-fit w-full grid items-center'>Contact.</a></Link></li>
-            <li><Link href="/skills"><a className='h-fit w-full grid items-center'>Skills.</a></Link></li>
-        </ul>
-    );
+  return (
+    <ul
+      className={`flex ${
+        column ? 'flex-col' : 'menuItemsWUnderline'
+      } gap-5 pl-4`}
+    >
+      {mobileMenuLinks.map((linkName, index) => {
+        let link = `/${linkName.toLowerCase().trim()}`
+        if (linkName === 'Home') {
+          link = '/'
+        }
+        return (
+          <li key={linkName}>
+            <Link href={link}>
+              <a className="grid h-fit w-full items-center">{linkName}.</a>
+            </Link>
+          </li>
+        )
+      })}
+    </ul>
+  )
 }
 export default MainMenu

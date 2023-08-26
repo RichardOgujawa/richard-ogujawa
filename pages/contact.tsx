@@ -4,9 +4,9 @@ import { useRouter } from 'next/router'
 //React Imports
 import React, { useEffect, useRef, useState } from 'react'
 //Component Imports
+import GridTop from '../components/GridTop'
 import Layout from '../components/Layout'
 import SidebarCV from '../components/SidebarCV'
-import GridTop from '../components/GridTop'
 //Data Imports && Grid Top Component
 import contactInfo from '../data/textTop.json'
 let contactTitle = contactInfo.contact.title
@@ -14,11 +14,11 @@ let contactSubtitle = contactInfo.contact.subtitle
 function ContactTopComponent() {
   return GridTop({
     title: contactInfo.contact.title,
-    subtitle:contactInfo.contact.subtitle,
+    subtitle: contactInfo.contact.subtitle,
   })
 }
 //MAIN COMPONENT
-const Contact = () => { 
+const Contact = () => {
   return (
     <>
       <Head>
@@ -26,7 +26,7 @@ const Contact = () => {
       </Head>
       <Layout hide={false} GridTop={ContactTopComponent} innerContainer center>
         <div className="grid w-full place-items-center">
-          <form 
+          <form
             method="post"
             action="https://www.flexyform.com/f/55379a9999b43447363e5dc105a9411ed231b1c0"
             className="inner-container grid gap-4 text-white"
@@ -44,12 +44,7 @@ const Contact = () => {
               </div>
               <div className="grid flex-1">
                 <label htmlFor="lname">Last Name </label>
-                <input 
-                type="text" 
-                name="lname" 
-                placeholder="Doe" 
-                required
-                />
+                <input type="text" name="lname" placeholder="Doe" required />
               </div>
             </div>
             <div className="grid">
@@ -57,7 +52,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="sebastian.doe@gmail.com"
+                placeholder="jeremiah.doe@gmail.com"
                 required
               />
             </div>
