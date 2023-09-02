@@ -11,6 +11,7 @@ interface Props {
 }
 export interface projectProps {
   _id?: string
+  status?: string
   mainUrl?: string
   githubUrl?: string
   description?: string
@@ -29,9 +30,7 @@ const Project = ({ item }: Props) => {
       <div
         className={`carousel-item relative grid aspect-square w-[225px] cursor-pointer overflow-hidden border-[7px]`}
       >
-        <div
-          className={`relative aspect-square w-[250px] transition duration-700 ease-out hover:scale-110`}
-        >
+        <div className={`relative aspect-square w-[250px] ease-out `}>
           <Image
             src={item.img ?? ''}
             alt=" "
@@ -39,7 +38,17 @@ const Project = ({ item }: Props) => {
             sizes="100"
             layout="fill"
             objectPosition="top center"
+            className="transition duration-700 hover:scale-110 hover:opacity-50"
           />
+          <div
+            className={`${
+              item.status == 'Completed'
+                ? 'bg-green-600/50 text-green-300 '
+                : 'bg-white/20 text-white'
+            } pointer-events-none absolute top-0 left-0 m-3 rounded-sm  py-1 px-2 backdrop-blur-md`}
+          >
+            {item.status}
+          </div>
         </div>
         <div className="absolute bottom-0 h-[45%] w-full bg-white px-4 pt-2 text-sm">
           <div className="flex w-full justify-between pt-1 text-col-neutral-900">

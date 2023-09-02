@@ -35,7 +35,7 @@ const Portfolio = () => {
   useEffect(() => {
     const getData = async () => {
       let res = await fetch(
-        `${window.location.origin}/api/projects?filter=current`
+        `${window.location.origin}/api/projects?filter=course`
       )
       let projectsJSON = (await res.json()).data
 
