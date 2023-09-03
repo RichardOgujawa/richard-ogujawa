@@ -223,4 +223,10 @@
             transform: translateX(0)
         }
     }
+
+    #project-img:hover + #pointer-img-pointer {
+        /* Your styles for #pointer-img when #project-img-pointer is hovered */
+        /* For example, you can change the opacity or transform properties */
+        opacity: 0;
+    }
 }

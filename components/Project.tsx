@@ -30,25 +30,34 @@ const Project = ({ item }: Props) => {
       <div
         className={`carousel-item relative grid aspect-square w-[225px] cursor-pointer overflow-hidden border-[7px]`}
       >
-        <div className={`relative aspect-square w-[250px] ease-out `}>
+        <div
+          className={`relative aspect-square w-[250px] justify-center ease-out`}
+        >
+          <div
+            id="project-img-pointer"
+            className="absolute top-0 left-0 h-full w-full bg-black"
+          />
           <Image
-            src={item.img ?? ''}
+            src={item.img || ''}
             alt=" "
             objectFit="cover"
             sizes="100"
             layout="fill"
             objectPosition="top center"
-            className="transition duration-700 hover:scale-110 hover:opacity-50"
+            className=" transition-all duration-700 hover:scale-110 hover:opacity-70"
+            id="project-img"
           />
-          <div
-            className={`${
-              item.status == 'Completed'
-                ? 'bg-green-600/50 text-green-300 '
-                : 'bg-white/20 text-white'
-            } pointer-events-none absolute top-0 left-0 m-3 rounded-sm  py-1 px-2 backdrop-blur-md`}
-          >
-            {item.status}
-          </div>
+          {item.status && (
+            <div
+              className={`${
+                item.status == 'Completed'
+                  ? 'bg-green-600/50 text-green-200 '
+                  : 'bg-blue-600/60 text-blue-200'
+              } pointer-events-none absolute top-0 left-0 m-3 rounded-sm py-1  px-2 backdrop-blur-md`}
+            >
+              <span className="">{item.status}</span>
+            </div>
+          )}
         </div>
         <div className="absolute bottom-0 h-[45%] w-full bg-white px-4 pt-2 text-sm">
           <div className="flex w-full justify-between pt-1 text-col-neutral-900">
