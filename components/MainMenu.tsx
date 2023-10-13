@@ -4,7 +4,7 @@ import Link from 'next/link'
 interface Props {
   column?: boolean
 }
-const mobileMenuLinks = ['Home', 'Portfolio', 'Contact', 'Skills']
+const mobileMenuLinks = ['Home', 'Portfolio', 'Skills']
 //MAIN COMPONENT
 const MainMenu = ({ column }: Props) => {
   return (

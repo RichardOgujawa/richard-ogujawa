@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
     :root {
         /*Colours*/
@@ -224,9 +225,4 @@
         }
     }
 
-    #project-img:hover + #pointer-img-pointer {
-        /* Your styles for #pointer-img when #project-img-pointer is hovered */
-        /* For example, you can change the opacity or transform properties */
-        opacity: 0;
-    }
 }

@@ -25,7 +25,7 @@ const Contact = () => {
         <title>Richard Ogujawa | Contact </title>
       </Head>
       <Layout hide={false} GridTop={ContactTopComponent} innerContainer center>
-        <div className="grid w-full place-items-center">
+        {/* <div className="grid w-full place-items-center">
           <form
             method="post"
             action="https://www.flexyform.com/f/55379a9999b43447363e5dc105a9411ed231b1c0"
@@ -76,7 +76,7 @@ const Contact = () => {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
       </Layout>
       <SidebarCV hide />
     </>
