@@ -62,9 +62,10 @@ const SidebarCV = ({ hide }: Props) => {
           </h2>
         </div>
         <p className="mb-5 w-full px-6 text-justify text-col-neutral-100 ">
-          A Master's student, who is considered to be hardworking, punctual,
-          driven, and capable of working with a team or on own initiative.
-          Always looking for opportunities to learn, grow, and contribute.
+          A Master&apos;s student, who is considered to be hardworking,
+          punctual, driven, and capable of working with a team or on own
+          initiative. Always looking for opportunities to learn, grow, and
+          contribute.
         </p>
       </section>
 
