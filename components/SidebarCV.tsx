@@ -62,10 +62,9 @@ const SidebarCV = ({ hide }: Props) => {
           </h2>
         </div>
         <p className="mb-5 w-full px-6 text-justify text-col-neutral-100 ">
-          A recent graduate with a flexible schedule ready to help you and your
-          team achieve your company’s goals. Considered to be hardworking,
-          punctual, driven, and capable of working with a team or on own
-          initiative. Always looking for opportunities to learn and grow.
+          A Master's student, who is considered to be hardworking, punctual,
+          driven, and capable of working with a team or on own initiative.
+          Always looking for opportunities to learn, grow, and contribute.
         </p>
       </section>
 
