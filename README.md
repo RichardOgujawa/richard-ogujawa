@@ -1,4 +1,4 @@
-# Porfolio Website
+# Portfolio Website
 
 This is [my portfolio website](https://www.richardogujawa.com) made using NextJS, Typescript, Tailwind CSS, and MongoDB. 
 
