@@ -8,7 +8,7 @@ const skillsData = [
     img: '/img/next-js-logo.svg',
   },
   {
-    skill: 'React Native',
+    skill: 'Python',
     img: '/img/react-native-logo.png',
   },
   {
@@ -32,7 +32,7 @@ const skillsData = [
     img: '/img/redux-logo.png',
   },
   {
-    skill: 'Sanity.io',
+    skill: 'Payload CMS',
     img: '/img/sanity-logo.png',
   },
   {
@@ -44,7 +44,7 @@ const skillsData = [
     img: '/img/css-logo.svg',
   },
   {
-    skill: 'SASS',
+    skill: 'tRPC',
     img: '/img/sass-logo.svg',
   },
   {

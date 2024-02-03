@@ -28,7 +28,7 @@ const Project = ({ item }: Props) => {
   return (
     <a href={item.mainUrl ?? ''} target="_blank" rel="noreferrer">
       <div
-        className={`carousel-item relative grid aspect-square w-[225px] cursor-pointer overflow-hidden border-[7px]`}
+        className={`carousel-item relative grid aspect-square w-[225px] cursor-pointer overflow-hidden`}
       >
         <div
           className={`relative aspect-square w-[250px] justify-center ease-out`}
